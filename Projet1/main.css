@@ -12,3 +12,7 @@ h3{
 .card{
     box-shadow: 0 0 5px 0 rgba(22, 22, 26, .25);
 }
+.moreIcon{
+    color:rgb(75, 101, 187);
+    cursor:pointer;
+}
