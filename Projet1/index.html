@@ -51,21 +51,23 @@
             changements d'huile, des travaux sur les pneus, l'entretien des véhicules
             et d'autres services.
           </h4>
-          <div style="margin-top:25px; margin-left:20px;">
-            <i class="fa-solid fa-location-dot"></i>
-            <h5 style="display: inline-flex; margin-left:5px">Nous sommes situés au 800 King Edward Ave, Ottawa, ON K1N
-              6N5</h5>
-          </div>
-          <div style="margin-top:15px; margin-left:20px;">
-            <i class="fa-solid fa-phone"></i>
-            <h5 style="display: inline;">Numéro de téléphone : (613)123-4567</h5>
-          </div>
-          <div style="margin-top:15px; margin-left:20px;">
-            <i class="far fa-clock"></i>
-            <h5 style="display: inline-flex;">Nos heures d'ouvertures sont:</h5>
-            <h5 style="margin-left:50px">Lundi - Samedi : 7h00 à 19h00</h5>
-            <h5 style="margin-left:50px">Dimanche : Fermé</h5>
-          </div>
+          <div style="margin: 10px 0px 0px 10px; padding:10px 0px 5px 10px; border-color: red;" id="divLocationHours">
+            <div style="margin-top:5px;">
+              <i class="fa-solid fa-location-dot"></i>
+              <h5 style="display: inline-flex; margin-left:5px">Nous sommes situés au 800 King Edward Ave, Ottawa, ON K1N
+                6N5</h5>
+            </div>
+            <div style="margin-top:15px">
+              <i class="fa-solid fa-phone"></i>
+              <h5 style="display: inline;">Numéro de téléphone : (613)123-4567</h5>
+            </div>
+            <div style="margin-top:15px;">
+              <i class="far fa-clock"></i>
+              <h5 style="display: inline-flex;">Nos heures d'ouvertures sont:</h5>
+              <h5 style="margin-left:50px">Lundi - Samedi : 7h00 à 19h00</h5>
+              <h5 style="margin-left:50px">Dimanche : Fermé</h5>
+            </div>
+          </div>       
         </div>
       </div>
     </div>
@@ -233,7 +235,7 @@
       <span class="mb-3 mb-md-0 text-muted">© 2023 Garage LeChar</span>
     </div>
     <ul class="nav justify-content-end">
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Location et Heures d'ouverture</a></li>
+      <li class="nav-item"><a href="#" onclick="addBorder()" class="nav-link px-2 text-muted">Location et Heures d'ouverture</a></li>
       <li class="nav-item"><a href="#equipe" class="nav-link px-2 text-muted">L'Équipe</a></li>
       <li class="nav-item"><a href="#services" class="nav-link px-2 text-muted">Services</a></li>
       <li class="nav-item"><a href="#rendezVous" class="nav-link px-2 text-muted">Prendre un rendez-vous</a></li>
