@@ -22,3 +22,7 @@ h3{
 html{
     scroll-behavior:smooth
 }
+.formDiv{
+    background: #EEEEEE;
+    padding:25px 40px !important;
+}
