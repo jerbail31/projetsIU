@@ -208,7 +208,7 @@
               <h5>Autres services</h5>
               <hr style="border-top:2px solid black">
               <div class="d-flex justify-content-between">
-                <div>Inspection du véhicule<i class="fas fa-angle-right moreIcon"></i></div>
+                <div>Inspection du véhicule <i class="fas fa-angle-right moreIcon"></i></div>
                 <div style="margin-right:20px">$120</div>
               </div>
               <hr>
@@ -272,15 +272,15 @@
           <div class="row">
             <div class="col-md-4">
               <label for="inputPrenom">Année de fabrication</label>
-              <input type="test" class="form-control" id="annee" placeholder="2018">
+              <input type="test" class="form-control" id="annee" placeholder="ex. 2018">
             </div>
             <div class="col-md-4">
               <label for="inputNom">Marque</label>
-              <input type="text" class="form-control" id="marque" placeholder="Toyota">
+              <input type="text" class="form-control" id="marque" placeholder="ex. Toyota">
             </div>
             <div class="col-md-4">
               <label for="inputPhone">Modèle</label>
-              <input type="text" class="form-control" id="modele" placeholder="Camry">
+              <input type="text" class="form-control" id="modele" placeholder="ex. Camry">
             </div>
           </div>
         </form>
@@ -293,9 +293,28 @@
               <label for="inputPhone">Service</label>
               <select class="form-select">
                 <option selected>Sélectionnez un service</option>
-                <option value="1">Fixon LeChar</option>
-                <option value="2">Imarchepu LeChar</option>
-                <option value="3">Yvon LeRéparer</option>
+                <optgroup label="Changement d'huile">
+                  <option value="11">Huile standard</option>
+                  <option value="12">Huile synthétique</option>
+                  <option value="13">Véhicule à Diesel</option>
+                </optgroup>
+                <optgroup label="Maintenance">
+                  <option value="21">Allignement des roues</option>
+                  <option value="22">Restoration des phares</option>
+                  <option value="23">Remplacement de la batterie</option>
+                </optgroup>
+                <optgroup label="Pneus">
+                  <option value="31">Changement des pneus</option>
+                  <option value="32">Changement des pneus (pneus démontés)</option>
+                  <option value="33">Réparation de pneu</option>
+                  <option value="34">Rotation des pneus</option>
+                </optgroup>
+                <optgroup label="Autres services">
+                  <option value="41">Inspection du véhicule</option>
+                  <option value="42">Inspection des freins</option>
+                  <option value="43">Changement du filtre à air</option>
+                  <option value="44">Changement des essuie-glaces</option>
+                </optgroup>
               </select>
             </div>
             <div class="col-md-3">
