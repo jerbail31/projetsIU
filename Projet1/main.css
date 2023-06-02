@@ -7,7 +7,7 @@ h4{
     font-size: 1.2rem !important
 }
 h3{
-    font-weight: 700;
+    font-weight: bold !important;
 }
 .card{
     box-shadow: 0 0 5px 0 rgba(22, 22, 26, .25);
@@ -25,4 +25,7 @@ html{
 .formDiv{
     background: #EEEEEE;
     padding:25px 40px !important;
+}
+.formSection{
+    margin:35px 0px;
 }

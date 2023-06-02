@@ -9,3 +9,20 @@ function addBorder(){
     
     return false;
 }
+$(document).ready(function(){
+    $('#btnBook').click(function(){
+        validateForm();
+        document.getElementById('emailConfirm').innerHTML = document.getElementById('inputEmail').value;
+        new bootstrap.Modal($('#confirmModal')).show();
+    });
+    $('#confirmModal').on('hide.bs.modal', function(){
+        window.location.href = "index.html";
+    })
+});
+
+//Fausse validation
+function validateForm(){
+    if(document.getElementById('inputEmail').value == ""){
+        document.getElementById('inputEmail').value = 'example@email.com'
+    }
+}
