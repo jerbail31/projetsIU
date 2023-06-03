@@ -34,7 +34,7 @@
         <div class="d-flex" id="mynavbar">
           <ul class="navbar-nav me-auto">
             <li class="nav-item" style="margin-right:20px; font-weight: bold;">
-              <label class="nav-link active clickable" onclick="addBorder()">Nous contacter</label>
+              <label class="nav-link active clickable" onclick="addBorder()">Contactez-nous</label>
             </li>
             <li class="nav-item" style="margin-right:20px; font-weight: bold;">
               <a class="nav-link active" href="#equipe">L'Équipe</a>
@@ -63,7 +63,8 @@
             changements d'huile, des travaux sur les pneus, l'entretien des véhicules
             et d'autres services.
           </h4>
-          <div style="margin: 10px 0px 0px 10px; padding:10px 0px 5px 10px; border: solid 3px transparent;" id="divLocationHours">
+          <div style="margin: 10px 0px 0px 10px; padding:10px 0px 5px 10px; border: solid 3px transparent;"
+            id="divLocationHours">
             <div style="margin-top:5px;">
               <i class="fas fa-map-marker-alt"></i>
               <h5 style="display: inline-flex; margin-left:5px">Nous sommes situés au 800 King Edward Ave, Ottawa, ON
@@ -126,8 +127,9 @@
     <!--Services-->
     <div class="container" id="services" style="scroll-margin-top:100px">
       <h2>Services</h2>
-      <h5>Nous offrons d'autres services non-disponible en-ligne. Venez nous voir sur location, appelez nous, ou 
-        <label class="clickLink" onclick="scrollQuestion()">posez-nous une question.</label></h5>
+      <h5>Nous offrons d'autres services non-disponible en-ligne. Venez nous voir sur location, appelez nous, ou
+        <label class="clickLink" onclick="scrollQuestion()">posez-nous une question.</label>
+      </h5>
       <div class="row gy-6">
         <div class="col-md">
           <div class="card h-100">
@@ -135,24 +137,31 @@
               <h5>Changement d'huile</h5>
               <hr style="border-top:2px solid black">
               <div class="d-flex justify-content-between">
-                <div>Huile ordinaire 
+                <div>Huile ordinaire
                   <i tabindex="0" data-bs-toggle="popover" data-bs-title="Changement d'huile ordinaire"
-                  data-bs-placement="right" data-bs-content="Changement d'huile et de filtre à huile avec de l'huile minérale" 
-                  data-bs-trigger="focus" class="pop fas fa-angle-right moreIcon"></i>
+                    data-bs-placement="right"
+                    data-bs-content="Ce service comprend un changement d'huile avec de l'huile minérale, le remplacement du filtre à huile ainsi qu'une inspection visuelle et des autres fluides."
+                    data-bs-trigger="focus" class="pop fas fa-angle-right moreIcon"></i>
                 </div>
                 <div style="margin-right:20px">$40-70*</div>
               </div>
               <hr>
               <div class="d-flex justify-content-between">
-                <div>Huile synthétique 
-                  <i data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Changement d'huile et de filtre à huile avec de l'huile synthétique" class="fas fa-angle-right moreIcon"></i>
+                <div>Huile synthétique
+                  <i tabindex="0" data-bs-toggle="popover" data-bs-title="Changement d'huile synthétique"
+                    data-bs-placement="right"
+                    data-bs-content="Ce service comprend un changement d'huile avec de l'huile synthétique, le remplacement du filtre à huile ainsi qu'une inspection visuelle et des autres fluides."
+                    data-bs-trigger="focus" class="pop fas fa-angle-right moreIcon"></i>
                 </div>
                 <div style="margin-right:20px">$70-130*</div>
               </div>
               <hr>
               <div class="d-flex justify-content-between">
-                <div>Véhicule à Diesel 
-                  <i data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Changement d'huile et de filtre à huile pour les voitures au diesel" class="fas fa-angle-right moreIcon"></i>
+                <div>Véhicule à Diesel
+                  <i tabindex="0" data-bs-toggle="popover"
+                    data-bs-title="Changement d'huile pour les véhicule au diesel" data-bs-placement="right"
+                    data-bs-content="Ce service comprend un changement d'huile, le remplacement du filtre à huile et du filtre à carburant ainsi qu'une inspection visuelle et des autres fluides."
+                    data-bs-trigger="focus" class="pop fas fa-angle-right moreIcon"></i>
                 </div>
                 <div style="margin-right:20px">$150-350*</div>
               </div>
@@ -168,22 +177,31 @@
               <h5>Maintenance</h5>
               <hr style="border-top:2px solid black">
               <div class="d-flex justify-content-between">
-                <div>Allignement des roues 
-                  <i data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Ajustement de l'angle des roues afin qu'elles soient parallèles entre elles et perpendiculaires au sol" class="fas fa-angle-right moreIcon"></i>
+                <div>Allignement des roues
+                  <i tabindex="0" data-bs-toggle="popover" data-bs-title="Allignement des roues"
+                    data-bs-placement="right"
+                    data-bs-content="Ce service comprend la vérification des angles des pneus, l'ajustement des angles si nécessaire, la vérification de l'alignement du volant et un essai routier."
+                    data-bs-trigger="focus" class="pop fas fa-angle-right moreIcon"></i>
                 </div>
                 <div style="margin-right:20px">$120</div>
               </div>
               <hr>
               <div class="d-flex justify-content-between">
-                <div>Restoration des phares 
-                  <i data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Sablage et de polissage qui redonnent un aspect neuf à vos phares et augmentent la visibilité nocturne" class="fas fa-angle-right moreIcon"></i>
+                <div>Restoration des phares
+                  <i tabindex="0" data-bs-toggle="popover" data-bs-title="Restoration des phares"
+                    data-bs-placement="right"
+                    data-bs-content="Ce service comprend un sablage et un polissage qui redonnent un aspect neuf à vos phares."
+                    data-bs-trigger="focus" class="pop fas fa-angle-right moreIcon"></i>
                 </div>
                 <div style="margin-right:20px">$100-250*</div>
               </div>
               <hr>
               <div class="d-flex justify-content-between">
-                <div>Remplacement de la batterie 
-                  <i data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Remplacement de la batterie déchargée ou défectueuse par une nouvelle batterie opérationnelle" class="fas fa-angle-right moreIcon"></i>
+                <div>Remplacement de la batterie
+                  <i tabindex="0" data-bs-toggle="popover" data-bs-title="Remplacement de la batterie "
+                    data-bs-placement="right"
+                    data-bs-content="Ce service comprend le remplacement de la batterie déchargée ou défectueuse par une nouvelle batterie opérationnelle."
+                    data-bs-trigger="focus" class="pop fas fa-angle-right moreIcon"></i>
                 </div>
                 <div style="margin-right:20px">$100-450*</div>
               </div>
@@ -201,29 +219,39 @@
               <h5>Pneus</h5>
               <hr style="border-top:2px solid black">
               <div class="d-flex justify-content-between">
-                <div>Changement des pneus 
-                  <i data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Changement des pneus en remplaçant les pneus par vos nouveaux pneus montés sur les jantes" class="fas fa-angle-right moreIcon"></i>
+                <div>Changement des pneus
+                  <i tabindex="0" data-bs-toggle="popover" data-bs-title="Changement des pneus"
+                    data-bs-placement="right"
+                    data-bs-content="Ce service comprend un changement avec quatre pneus sur jantes. Vous devez apporter vos propre pneus."
+                    data-bs-trigger="focus" class="pop fas fa-angle-right moreIcon"></i>
                 </div>
                 <div style="margin-right:20px">$60</div>
               </div>
               <hr />
               <div class="d-flex justify-content-between">
-                <div>Changement des pneus (pneus démontés) 
-                  <i data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Changement des pneus en remplaçant les pneus par vos nouveaux pneus sans jantes" class="fas fa-angle-right moreIcon"></i>
+                <div>Changement des pneus (pneus démontés)
+                  <i tabindex="0" data-bs-toggle="popover" data-bs-title="Changement des pneus (pneus démontés)"
+                    data-bs-placement="right"
+                    data-bs-content="Ce service comprend un changement avec quatre pneus sans jantes. Vous devez apporter vos propre pneus."
+                    data-bs-trigger="focus" class="pop fas fa-angle-right moreIcon"></i>
                 </div>
                 <div style="margin-right:20px">$120</div>
               </div>
               <hr>
               <div class="d-flex justify-content-between">
-                <div>Réparation de pneu 
-                  <i data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Réparation simple des pneus. Le prix varie selon la gravité du bris" class="fas fa-angle-right moreIcon"></i>
+                <div>Réparation de pneu
+                  <i tabindex="0" data-bs-toggle="popover" data-bs-title="Réparation de pneu" data-bs-placement="right"
+                    data-bs-content="Ce service comprend une réparation simple des pneus. Le prix varie selon la gravité du bris."
+                    data-bs-trigger="focus" class="pop fas fa-angle-right moreIcon"></i>
                 </div>
                 <div style="margin-right:20px">$60*</div>
               </div>
               <hr>
               <div class="d-flex justify-content-between">
-                <div>Rotation des pneus 
-                  <i data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Invertion de la position des pneus du véhicule pour assurer une usure uniforme et une meilleure adhérence" class="fas fa-angle-right moreIcon"></i>
+                <div>Rotation des pneus
+                  <i tabindex="0" data-bs-toggle="popover" data-bs-title="Rotation des pneus" data-bs-placement="right"
+                    data-bs-content="Ce service comprend une invertion de la position des pneus du véhicule pour assurer une usure uniforme et une meilleure adhérence."
+                    data-bs-trigger="focus" class="pop fas fa-angle-right moreIcon"></i>
                 </div>
                 <div style="margin-right:20px">$50</div>
               </div>
@@ -239,29 +267,41 @@
               <h5>Autres services</h5>
               <hr style="border-top:2px solid black">
               <div class="d-flex justify-content-between">
-                <div>Inspection du véhicule 
-                  <i data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Inpection du moteur, des fuites des liquides, de la carrosserie et des freins" class="fas fa-angle-right moreIcon"></i>
+                <div>Inspection du véhicule
+                  <i tabindex="0" data-bs-toggle="popover" data-bs-title="Inspection du véhicule"
+                    data-bs-placement="right"
+                    data-bs-content="Ce service comprend une inpection du moteur, des fuites des liquides, de la carrosserie et des freins."
+                    data-bs-trigger="focus" class="pop fas fa-angle-right moreIcon"></i>
                 </div>
                 <div style="margin-right:20px">$120</div>
               </div>
               <hr>
               <div class="d-flex justify-content-between">
-                <div>Inspection des freins 
-                  <i data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Vérification de l'état des freins du véhicule" class="fas fa-angle-right moreIcon"></i>
+                <div>Inspection des freins
+                  <i tabindex="0" data-bs-toggle="popover" data-bs-title="Inspection des freins"
+                    data-bs-placement="right"
+                    data-bs-content="Ce service comprend une vérification complète de l'état des freins du véhicule."
+                    data-bs-trigger="focus" class="pop fas fa-angle-right moreIcon"></i>
                 </div>
                 <div style="margin-right:20px">$100</div>
               </div>
               <hr>
               <div class="d-flex justify-content-between">
-                <div>Changement du filtre à air 
-                  <i data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Changement du vieux filtre avec un nouveau filtre" class="fas fa-angle-right moreIcon"></i>
+                <div>Changement du filtre à air
+                  <i tabindex="0" data-bs-toggle="popover" data-bs-title="Changement du filtre à air"
+                    data-bs-placement="right"
+                    data-bs-content="Ce service comprend le changement du vieux filtre à air avec un nouveau filtre."
+                    data-bs-trigger="focus" class="pop fas fa-angle-right moreIcon"></i>
                 </div>
                 <div style="margin-right:20px">$45-65</div>
               </div>
               <hr>
               <div class="d-flex justify-content-between">
-                <div>Changement des essuie-glaces 
-                  <i data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Changement des anciens essuie-glaces avec de nouveaux" class="fas fa-angle-right moreIcon"></i>
+                <div>Changement des essuie-glaces
+                  <i tabindex="0" data-bs-toggle="popover" data-bs-title="Changement des essuie-glaces "
+                    data-bs-placement="right"
+                    data-bs-content="Ce service comprend le changement des anciens essuie-glaces avec de nouveaux."
+                    data-bs-trigger="focus" class="pop fas fa-angle-right moreIcon"></i>
                 </div>
                 <div style="margin-right:20px">$55</div>
               </div>
@@ -272,7 +312,8 @@
           </div>
         </div>
       </div>
-      <p>* Les prix varient selon la marque et le modèle. Un prix vous sera partager par courriel avant le rendez-vous.</p>
+      <p>* Les prix varient selon la marque et le modèle. Un prix vous sera partager par courriel avant le rendez-vous.
+      </p>
     </div>
     <!--Formulaire rendez-vous-->
     <div class="container formDiv" id="rendezVous" style="scroll-margin-top:100px; border-radius:0.375rem">
@@ -436,7 +477,8 @@
         </div>
         <div style="margin-top:25px" class="">
           <div class="d-flex justify-content-between">
-            <button class="btn btn-danger" id="btnQuestion" type="button" style="padding: 10px 20px;border-radius: 0.5rem;">
+            <button class="btn btn-danger" id="btnQuestion" type="button"
+              style="padding: 10px 20px;border-radius: 0.5rem;">
               Soumettre la question</button>
             <div></div><!--Put before button tag to make button float right-->
           </div>
@@ -488,7 +530,7 @@
       <span class="mb-3 mb-md-0 text-muted">© 2023 Garage LeChar</span>
     </div>
     <ul class="nav justify-content-end">
-      <li class="nav-item"><label onclick="addBorder()" class="nav-link px-2 text-muted clickable">Nous contacter</label></li>
+      <li class="nav-item"><label onclick="addBorder()" class="nav-link px-2 text-muted clickable">Contactez-nous</label></li>
       <li class="nav-item"><a href="#equipe" class="nav-link px-2 text-muted">L'Équipe</a></li>
       <li class="nav-item"><a href="#services" class="nav-link px-2 text-muted">Services</a></li>
       <li class="nav-item"><a href="#rendezVous" class="nav-link px-2 text-muted">Prendre un rendez-vous</a></li>
