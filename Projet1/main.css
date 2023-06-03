@@ -42,3 +42,6 @@ html{
     text-decoration: underline;
     cursor:pointer;
 }
+.clickable{
+    cursor:pointer;
+}

@@ -26,12 +26,15 @@
     <nav class="navbar navbar-expand-sm sticky-top navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="images/logo.png" alt="Logo" style="margin-left:20px; width:250px;" class="rounded-pill">
+          <img src="images/logo.png" alt="Logo" style="width:250px;" class="rounded-pill">
 
         </a>
 
         <div class="d-flex" id="mynavbar">
           <ul class="navbar-nav me-auto">
+            <li class="nav-item" style="margin-right:20px; font-weight: bold;">
+              <label class="nav-link active clickable" onclick="addBorder()">Nous contacter</label>
+            </li>
             <li class="nav-item" style="margin-right:20px; font-weight: bold;">
               <a class="nav-link active" href="#equipe">L'Équipe</a>
             </li>
@@ -59,7 +62,7 @@
             changements d'huile, des travaux sur les pneus, l'entretien des véhicules
             et d'autres services.
           </h4>
-          <div style="margin: 10px 0px 0px 10px; padding:10px 0px 5px 10px; border-color: red;" id="divLocationHours">
+          <div style="margin: 10px 0px 0px 10px; padding:10px 0px 5px 10px; border: solid 3px transparent;" id="divLocationHours">
             <div style="margin-top:5px;">
               <i class="fas fa-map-marker-alt"></i>
               <h5 style="display: inline-flex; margin-left:5px">Nous sommes situés au 800 King Edward Ave, Ottawa, ON
@@ -72,7 +75,7 @@
             </div>
             <div style="margin-top:15px;">
               <i class="far fa-clock"></i>
-              <h5 style="display: inline-flex;">Nos heures d'ouvertures sont:</h5>
+              <h5 style="display: inline-flex;">Nos heures d'ouvertures sont :</h5>
               <h5 style="margin-left:50px">Lundi - Samedi : 7h00 à 19h00</h5>
               <h5 style="margin-left:50px">Dimanche : Fermé</h5>
             </div>
@@ -89,8 +92,8 @@
             <img src="images/fixon.png" class="card-img-top" alt="img_fixon">
             <div class="card-body">
               <h5 class="card-title fw-bold">Fixon Lechar</h5>
-              <p class="card-text">Fixon est le fondateur de Garage LeChar et a plus de 34 ans d'expérience en
-                réparation automobile</p>
+              <p class="card-text">Fixon est le fondateur du Garage LeChar et a plus de 34 ans d'expérience en
+                réparation automobile.</p>
             </div>
           </div>
         </div>
@@ -131,17 +134,23 @@
               <h5>Changement d'huile</h5>
               <hr style="border-top:2px solid black">
               <div class="d-flex justify-content-between">
-                <div>Huile standard <i class="fas fa-angle-right moreIcon"></i></div>
+                <div>Huile ordinaire 
+                  <i data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Changement d'huile et de filtre à huile avec de l'huile minérale" class="fas fa-angle-right moreIcon"></i>
+                </div>
                 <div style="margin-right:20px">$40-70*</div>
               </div>
               <hr>
               <div class="d-flex justify-content-between">
-                <div>Huile synthétique <i class="fas fa-angle-right moreIcon"></i></div>
+                <div>Huile synthétique 
+                  <i data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Changement d'huile et de filtre à huile avec de l'huile synthétique" class="fas fa-angle-right moreIcon"></i>
+                </div>
                 <div style="margin-right:20px">$70-130*</div>
               </div>
               <hr>
               <div class="d-flex justify-content-between">
-                <div>Véhicule à Diesel <i class="fas fa-angle-right moreIcon"></i></div>
+                <div>Véhicule à Diesel 
+                  <i data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Changement d'huile et de filtre à huile pour les voitures au diesel" class="fas fa-angle-right moreIcon"></i>
+                </div>
                 <div style="margin-right:20px">$150-350*</div>
               </div>
               <hr>
@@ -156,17 +165,23 @@
               <h5>Maintenance</h5>
               <hr style="border-top:2px solid black">
               <div class="d-flex justify-content-between">
-                <div>Allignement des roues <i class="fas fa-angle-right moreIcon"></i></div>
+                <div>Allignement des roues 
+                  <i data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Ajustement de l'angle des roues afin qu'elles soient parallèles entre elles et perpendiculaires au sol" class="fas fa-angle-right moreIcon"></i>
+                </div>
                 <div style="margin-right:20px">$120</div>
               </div>
               <hr>
               <div class="d-flex justify-content-between">
-                <div>Restoration des phares <i class="fas fa-angle-right moreIcon"></i></div>
+                <div>Restoration des phares 
+                  <i data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Sablage et de polissage qui redonnent un aspect neuf à vos phares et augmentent la visibilité nocturne" class="fas fa-angle-right moreIcon"></i>
+                </div>
                 <div style="margin-right:20px">$100-250*</div>
               </div>
               <hr>
               <div class="d-flex justify-content-between">
-                <div>Remplacement de la batterie <i class="fas fa-angle-right moreIcon"></i></div>
+                <div>Remplacement de la batterie 
+                  <i data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Remplacement de la batterie déchargée ou défectueuse par une nouvelle batterie opérationnelle" class="fas fa-angle-right moreIcon"></i>
+                </div>
                 <div style="margin-right:20px">$100-450*</div>
               </div>
               <hr>
@@ -183,22 +198,30 @@
               <h5>Pneus</h5>
               <hr style="border-top:2px solid black">
               <div class="d-flex justify-content-between">
-                <div>Changement des pneus <i class="fas fa-angle-right moreIcon"></i></div>
+                <div>Changement des pneus 
+                  <i data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Changement des pneus en remplaçant les pneus par vos nouveaux pneus montés sur les jantes" class="fas fa-angle-right moreIcon"></i>
+                </div>
                 <div style="margin-right:20px">$60</div>
               </div>
               <hr />
               <div class="d-flex justify-content-between">
-                <div>Changement des pneus (pneus démontés) <i class="fas fa-angle-right moreIcon"></i></div>
+                <div>Changement des pneus (pneus démontés) 
+                  <i data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Changement des pneus en remplaçant les pneus par vos nouveaux pneus sans jantes" class="fas fa-angle-right moreIcon"></i>
+                </div>
                 <div style="margin-right:20px">$120</div>
               </div>
               <hr>
               <div class="d-flex justify-content-between">
-                <div>Réparation de pneu <i class="fas fa-angle-right moreIcon"></i></div>
+                <div>Réparation de pneu 
+                  <i data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Réparation simple des pneus. Le prix varie selon la gravité du bris" class="fas fa-angle-right moreIcon"></i>
+                </div>
                 <div style="margin-right:20px">$60*</div>
               </div>
               <hr>
               <div class="d-flex justify-content-between">
-                <div>Rotation des pneus <i class="fas fa-angle-right moreIcon"></i></div>
+                <div>Rotation des pneus 
+                  <i data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Invertion de la position des pneus du véhicule pour assurer une usure uniforme et une meilleure adhérence" class="fas fa-angle-right moreIcon"></i>
+                </div>
                 <div style="margin-right:20px">$50</div>
               </div>
               <hr>
@@ -213,22 +236,30 @@
               <h5>Autres services</h5>
               <hr style="border-top:2px solid black">
               <div class="d-flex justify-content-between">
-                <div>Inspection du véhicule <i class="fas fa-angle-right moreIcon"></i></div>
+                <div>Inspection du véhicule 
+                  <i data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Inpection du moteur, des fuites des liquides, de la carrosserie et des freins" class="fas fa-angle-right moreIcon"></i>
+                </div>
                 <div style="margin-right:20px">$120</div>
               </div>
               <hr>
               <div class="d-flex justify-content-between">
-                <div>Inspection des freins <i class="fas fa-angle-right moreIcon"></i></div>
+                <div>Inspection des freins 
+                  <i data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Vérification de l'état des freins du véhicule" class="fas fa-angle-right moreIcon"></i>
+                </div>
                 <div style="margin-right:20px">$100</div>
               </div>
               <hr>
               <div class="d-flex justify-content-between">
-                <div>Changement du filtre à air <i class="fas fa-angle-right moreIcon"></i></div>
+                <div>Changement du filtre à air 
+                  <i data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Changement du vieux filtre avec un nouveau filtre" class="fas fa-angle-right moreIcon"></i>
+                </div>
                 <div style="margin-right:20px">$45-65</div>
               </div>
               <hr>
               <div class="d-flex justify-content-between">
-                <div>Changement des essuie-glaces <i class="fas fa-angle-right moreIcon"></i></div>
+                <div>Changement des essuie-glaces 
+                  <i data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Changement des anciens essuie-glaces avec de nouveaux" class="fas fa-angle-right moreIcon"></i>
+                </div>
                 <div style="margin-right:20px">$55</div>
               </div>
               <hr>
@@ -238,7 +269,7 @@
           </div>
         </div>
       </div>
-      <p>* Les prix varient selon la marque et le modèle. Un prix vous sera partager par courriel avant le rendez-vous</p>
+      <p>* Les prix varient selon la marque et le modèle. Un prix vous sera partager par courriel avant le rendez-vous.</p>
     </div>
     <!--Formulaire rendez-vous-->
     <div class="container formDiv" id="rendezVous" style="scroll-margin-top:100px; border-radius:0.375rem">
@@ -250,17 +281,16 @@
           <form>
             <div class="row">
               <div class="group col-md-4">
-                <label for="inputPrenom">Prénom</label>
+                <label for="prenom">Prénom</label>
                 <input type="test" class="form-control" id="prenom" placeholder="Prénom">
               </div>
               <div class="col-md-4">
-                <label for="inputNom">Nom</label>
+                <label for="nom">Nom</label>
                 <input type="text" class="form-control" id="nom" placeholder="Nom">
               </div>
               <div class="col-md-4">
-                <label for="inputPhone">Numéro de téléphone</label>
-                <input type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" class="form-control" id="phone"
-                  placeholder="613-xxx-xxxx">
+                <label for="phone">Numéro de téléphone</label>
+                <input type="text" class="form-control" id="phone" placeholder="613-xxx-xxxx">
               </div>
             </div>
             <div class="row">
@@ -280,15 +310,15 @@
           <form>
             <div class="row">
               <div class="col-md-4">
-                <label for="inputPrenom">Année de fabrication</label>
+                <label for="annee">Année de fabrication</label>
                 <input type="test" class="form-control" id="annee" placeholder="ex. 2018">
               </div>
               <div class="col-md-4">
-                <label for="inputNom">Marque</label>
+                <label for="marque">Marque</label>
                 <input type="text" class="form-control" id="marque" placeholder="ex. Toyota">
               </div>
               <div class="col-md-4">
-                <label for="inputPhone">Modèle</label>
+                <label for="modele">Modèle</label>
                 <input type="text" class="form-control" id="modele" placeholder="ex. Camry">
               </div>
             </div>
@@ -299,11 +329,11 @@
           <form>
             <div class="row">
               <div class="col-md-3">
-                <label for="inputPhone">Service</label>
-                <select class="form-select">
+                <label for="service">Service</label>
+                <select class="form-select" id="service">
                   <option selected>Sélectionnez un service</option>
                   <optgroup label="Changement d'huile">
-                    <option value="11">Huile standard</option>
+                    <option value="11">Huile ordinaire</option>
                     <option value="12">Huile synthétique</option>
                     <option value="13">Véhicule à Diesel</option>
                   </optgroup>
@@ -327,8 +357,8 @@
                 </select>
               </div>
               <div class="col-md-3">
-                <label for="inputNom">Mécanicien</label>
-                <select class="form-select">
+                <label for="mecanicien">Mécanicien</label>
+                <select class="form-select" id="mecanicien">
                   <option selected>Sélectionnez un mécanicien</option>
                   <option value="1">Fixon LeChar</option>
                   <option value="2">Imarchepu LeChar</option>
@@ -336,11 +366,11 @@
                 </select>
               </div>
               <div class="col-md-3">
-                <label for="inputPrenom">Date</label>
+                <label for="date">Date</label>
                 <input class="form-control" type="date" name="date" id="date">
               </div>
               <div class="col-md-3">
-                <label for="inputNom">Heure</label>
+                <label for="time">Heure</label>
                 <input class="form-control" type="time" name="time" id="time">
               </div>
             </div>
@@ -362,22 +392,22 @@
           <form>
             <div class="row">
               <div class="group col-md-4">
-                <label for="inputPrenom">Prénom</label>
+                <label for="questionPrenom">Prénom</label>
                 <input type="test" class="form-control" id="questionPrenom" placeholder="Prénom">
               </div>
               <div class="col-md-4">
-                <label for="inputNom">Nom</label>
+                <label for="questionNom">Nom</label>
                 <input type="text" class="form-control" id="questionNom" placeholder="Nom">
               </div>
               <div class="col-md-4">
-                <label for="inputEmail">Contact</label>
+                <label for="questionContact">Contact</label>
                 <input type="text" class="form-control" id="questionContact" placeholder="Courriel ou téléphone">
               </div>
             </div>
             <div class="row">
               <div class="col-md-12">
-                <label for="inputEmail">Question</label>
-                <textarea rows="6" class="form-control"></textarea>
+                <label for="questionField">Question</label>
+                <textarea rows="6" class="form-control" id="questionField"></textarea>
               </div>
             </div>
           </form>
@@ -387,16 +417,16 @@
           <form>
             <div class="row">
               <div class="col-md-4">
-                <label for="inputPrenom">Année de fabrication</label>
-                <input type="test" class="form-control" id="annee" placeholder="ex. 2018">
+                <label for="anneeq">Année de fabrication</label>
+                <input type="test" class="form-control" id="anneeq" placeholder="ex. 2018">
               </div>
               <div class="col-md-4">
-                <label for="inputNom">Marque</label>
-                <input type="text" class="form-control" id="marque" placeholder="ex. Toyota">
+                <label for="marqueq">Marque</label>
+                <input type="text" class="form-control" id="marqueq" placeholder="ex. Toyota">
               </div>
               <div class="col-md-4">
-                <label for="inputPhone">Modèle</label>
-                <input type="text" class="form-control" id="modele" placeholder="ex. Camry">
+                <label for="modeleq">Modèle</label>
+                <input type="text" class="form-control" id="modeleq" placeholder="ex. Camry">
               </div>
             </div>
           </form>
@@ -419,7 +449,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <p>Un courriel de contentant les détails du rendez-vous a été envoyer au
+            <p>Un courriel contenant les détails du rendez-vous a été envoyé à
               <label id="emailConfirm">example@email.com.</label>
             </p>
           </div>
@@ -438,7 +468,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <p>Nous allons vous contacter le plus vite que possible.
+            <p>Nous allons vous contacter dans les plus brefs délais.
             </p>
           </div>
           <div class="modal-footer">
@@ -455,8 +485,7 @@
       <span class="mb-3 mb-md-0 text-muted">© 2023 Garage LeChar</span>
     </div>
     <ul class="nav justify-content-end">
-      <li class="nav-item"><a href="#" onclick="addBorder()" class="nav-link px-2 text-muted">Location et Heures
-          d'ouverture</a></li>
+      <li class="nav-item"><label onclick="addBorder()" class="nav-link px-2 text-muted clickable">Nous contacter</label></li>
       <li class="nav-item"><a href="#equipe" class="nav-link px-2 text-muted">L'Équipe</a></li>
       <li class="nav-item"><a href="#services" class="nav-link px-2 text-muted">Services</a></li>
       <li class="nav-item"><a href="#rendezVous" class="nav-link px-2 text-muted">Prendre un rendez-vous</a></li>

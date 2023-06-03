@@ -5,10 +5,10 @@ function scrollRendezVous(){
 }
 function addBorder(){
     var div = document.getElementById("divLocationHours");
-    div.style.border = "solid 3px red";
+    div.style.borderColor = "red";
     div.style.borderRadius = "25px";
-    
-    return false;
+    window.scrollTo(0, 0);
+
 }
 $(document).ready(function(){
     //rendez-vous modal
@@ -28,6 +28,9 @@ $(document).ready(function(){
     $('#questionModal').on('hide.bs.modal', function(){
         window.location.href = "index.html";
     });
+    //tooltip init
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 });
 
 //Fausse validation
@@ -36,6 +39,7 @@ function validateForm(){
         document.getElementById('inputEmail').value = 'example@email.com'
     }
 }
+
 function questionaireShow(){
     document.getElementById('divRendezVous').style.display = 'none';
     document.getElementById('divQuestion').style.display = 'block';
