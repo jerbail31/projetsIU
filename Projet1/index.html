@@ -26,7 +26,8 @@
     <nav class="navbar navbar-expand-sm sticky-top navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="images/logo.png" alt="Logo" style="margin-left:20px; width:100px;" class="rounded-pill">
+          <img src="images/logo.png" alt="Logo" style="margin-left:20px; width:250px;" class="rounded-pill">
+
         </a>
 
         <div class="d-flex" id="mynavbar">
@@ -48,8 +49,7 @@
     </nav>
     <!--Home-->
     <div class="container" id="home">
-      <h1>Garage LeChar</h1>
-      <div class="row" style="border:none; background:#EEEEEE; padding:15px 0px;">
+      <div class="row" style="border:none; background:#EEEEEE; padding:15px 0px; border-radius:0.375rem">
         <div class="col-md-5">
           <img src="images/shopimage2.jpg" alt="Garage image" style="height:325px;" />
         </div>
@@ -122,6 +122,8 @@
     <!--Services-->
     <div class="container" id="services" style="scroll-margin-top:100px">
       <h3>Services</h3>
+      <h5>Nous offrons d'autres services non-disponible en-ligne. Venez nous voir sur location, appelez nous, ou 
+        <label class="clickLink" onclick="scrollQuestion()">posez-nous une question.</label></h5>
       <div class="row gy-6">
         <div class="col-md">
           <div class="card h-100">
@@ -143,7 +145,8 @@
                 <div style="margin-right:20px">$150-350*</div>
               </div>
               <hr>
-              <button class="btn btn-danger" onclick="scrollRendezVous();" style="float:right">Prendre un rendez-vous</button>
+              <button class="btn btn-danger" onclick="scrollRendezVous();" style="float:right">Prendre un
+                rendez-vous</button>
             </div>
           </div>
         </div>
@@ -167,7 +170,8 @@
                 <div style="margin-right:20px">$100-450*</div>
               </div>
               <hr>
-              <button class="btn btn-danger" onclick="scrollRendezVous();" style="float:right">Prendre un rendez-vous</button>
+              <button class="btn btn-danger" onclick="scrollRendezVous();" style="float:right">Prendre un
+                rendez-vous</button>
             </div>
           </div>
         </div>
@@ -198,7 +202,8 @@
                 <div style="margin-right:20px">$50</div>
               </div>
               <hr>
-              <button class="btn btn-danger" onclick="scrollRendezVous();" style="float:right">Prendre un rendez-vous</button>
+              <button class="btn btn-danger" onclick="scrollRendezVous();" style="float:right">Prendre un
+                rendez-vous</button>
             </div>
           </div>
         </div>
@@ -227,126 +232,185 @@
                 <div style="margin-right:20px">$55</div>
               </div>
               <hr>
-              <button class="btn btn-danger" onclick="scrollRendezVous();" style="float:right">Prendre un rendez-vous</button>
+              <button class="btn btn-danger" onclick="scrollRendezVous();" style="float:right">Prendre un
+                rendez-vous</button>
             </div>
           </div>
         </div>
       </div>
+      <p>* Les prix varient selon la marque et le modèle. Un prix vous sera partager par courriel avant le rendez-vous</p>
     </div>
     <!--Formulaire rendez-vous-->
-    <div class="container formDiv" id="rendezVous" style="scroll-margin-top:100px;">
-      <h3>Prendre un rendez-vous</h3>
-      <div class="formSection">
-        <h5>1. Information Personelle</h5>
-        <form>
-          <div class="row">
-            <div class="group col-md-4">
-              <label for="inputPrenom">Prénom</label>
-              <input type="test" class="form-control" id="prenom" placeholder="Prénom">
+    <div class="container formDiv" id="rendezVous" style="scroll-margin-top:100px; border-radius:0.375rem">
+      <div id="divRendezVous">
+        <h3 style="display:inline">Prendre un rendez-vous</h3>
+        <label class="switchLink" onclick="questionaireShow();">Je veux poser une question</label>
+        <div class="formSection">
+          <h5>1. Information Personelle</h5>
+          <form>
+            <div class="row">
+              <div class="group col-md-4">
+                <label for="inputPrenom">Prénom</label>
+                <input type="test" class="form-control" id="prenom" placeholder="Prénom">
+              </div>
+              <div class="col-md-4">
+                <label for="inputNom">Nom</label>
+                <input type="text" class="form-control" id="nom" placeholder="Nom">
+              </div>
+              <div class="col-md-4">
+                <label for="inputPhone">Numéro de téléphone</label>
+                <input type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" class="form-control" id="phone"
+                  placeholder="613-xxx-xxxx">
+              </div>
             </div>
-            <div class="col-md-4">
-              <label for="inputNom">Nom</label>
-              <input type="text" class="form-control" id="nom" placeholder="Nom">
+            <div class="row">
+              <div class="col-md-6">
+                <label for="inputEmail">Courriel</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Courriel">
+              </div>
+              <div class="col-md-6">
+                <label for="inputAddress">Addresse</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Adresse">
+              </div>
             </div>
-            <div class="col-md-4">
-              <label for="inputPhone">Numéro de téléphone</label>
-              <input type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" class="form-control" id="phone"
-                placeholder="613-xxx-xxxx">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <label for="inputEmail">Courriel</label>
-              <input type="email" class="form-control" id="inputEmail" placeholder="Courriel">
-            </div>
-            <div class="col-md-6">
-              <label for="inputAddress">Addresse</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="Adresse">
-            </div>
-          </div>
-        </form>
-      </div>
-      <div class="formSection">
-        <h5>2. Information à propos du véhicule</h5>
-        <form>
-          <div class="row">
-            <div class="col-md-4">
-              <label for="inputPrenom">Année de fabrication</label>
-              <input type="test" class="form-control" id="annee" placeholder="ex. 2018">
-            </div>
-            <div class="col-md-4">
-              <label for="inputNom">Marque</label>
-              <input type="text" class="form-control" id="marque" placeholder="ex. Toyota">
-            </div>
-            <div class="col-md-4">
-              <label for="inputPhone">Modèle</label>
-              <input type="text" class="form-control" id="modele" placeholder="ex. Camry">
-            </div>
-          </div>
-        </form>
-      </div>
-      <div class="formSection">
-        <h5>3. Information du rendez-vous</h5>
-        <form>
-          <div class="row">
-            <div class="col-md-3">
-              <label for="inputPhone">Service</label>
-              <select class="form-select">
-                <option selected>Sélectionnez un service</option>
-                <optgroup label="Changement d'huile">
-                  <option value="11">Huile standard</option>
-                  <option value="12">Huile synthétique</option>
-                  <option value="13">Véhicule à Diesel</option>
-                </optgroup>
-                <optgroup label="Maintenance">
-                  <option value="21">Allignement des roues</option>
-                  <option value="22">Restoration des phares</option>
-                  <option value="23">Remplacement de la batterie</option>
-                </optgroup>
-                <optgroup label="Pneus">
-                  <option value="31">Changement des pneus</option>
-                  <option value="32">Changement des pneus (pneus démontés)</option>
-                  <option value="33">Réparation de pneu</option>
-                  <option value="34">Rotation des pneus</option>
-                </optgroup>
-                <optgroup label="Autres services">
-                  <option value="41">Inspection du véhicule</option>
-                  <option value="42">Inspection des freins</option>
-                  <option value="43">Changement du filtre à air</option>
-                  <option value="44">Changement des essuie-glaces</option>
-                </optgroup>
-              </select>
-            </div>
-            <div class="col-md-3">
-              <label for="inputNom">Mécanicien</label>
-              <select class="form-select">
-                <option selected>Sélectionnez un mécanicien</option>
-                <option value="1">Fixon LeChar</option>
-                <option value="2">Imarchepu LeChar</option>
-                <option value="3">Yvon LeRéparer</option>
-              </select>
-            </div>
-            <div class="col-md-3">
-              <label for="inputPrenom">Date</label>
-              <input class="form-control" type="date" name="date" id="date">
-            </div>
-            <div class="col-md-3">
-              <label for="inputNom">Heure</label>
-              <input class="form-control" type="time" name="time" id="time">
-            </div>
-          </div>
-        </form>
-      </div>
-      <div style="margin-top:25px" class="">
-        <div class="d-flex justify-content-between">
-          <button class="btn btn-danger" id="btnBook" type="button" style="padding: 10px 20px;border-radius: 0.5rem;">
-            Soumettre le formulaire de rendez-vous</button>
-          <div></div><!--Put before button tag to make button float right-->
+          </form>
         </div>
-        
+        <div class="formSection">
+          <h5>2. Information à propos du véhicule</h5>
+          <form>
+            <div class="row">
+              <div class="col-md-4">
+                <label for="inputPrenom">Année de fabrication</label>
+                <input type="test" class="form-control" id="annee" placeholder="ex. 2018">
+              </div>
+              <div class="col-md-4">
+                <label for="inputNom">Marque</label>
+                <input type="text" class="form-control" id="marque" placeholder="ex. Toyota">
+              </div>
+              <div class="col-md-4">
+                <label for="inputPhone">Modèle</label>
+                <input type="text" class="form-control" id="modele" placeholder="ex. Camry">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="formSection">
+          <h5>3. Information du rendez-vous</h5>
+          <form>
+            <div class="row">
+              <div class="col-md-3">
+                <label for="inputPhone">Service</label>
+                <select class="form-select">
+                  <option selected>Sélectionnez un service</option>
+                  <optgroup label="Changement d'huile">
+                    <option value="11">Huile standard</option>
+                    <option value="12">Huile synthétique</option>
+                    <option value="13">Véhicule à Diesel</option>
+                  </optgroup>
+                  <optgroup label="Maintenance">
+                    <option value="21">Allignement des roues</option>
+                    <option value="22">Restoration des phares</option>
+                    <option value="23">Remplacement de la batterie</option>
+                  </optgroup>
+                  <optgroup label="Pneus">
+                    <option value="31">Changement des pneus</option>
+                    <option value="32">Changement des pneus (pneus démontés)</option>
+                    <option value="33">Réparation de pneu</option>
+                    <option value="34">Rotation des pneus</option>
+                  </optgroup>
+                  <optgroup label="Autres services">
+                    <option value="41">Inspection du véhicule</option>
+                    <option value="42">Inspection des freins</option>
+                    <option value="43">Changement du filtre à air</option>
+                    <option value="44">Changement des essuie-glaces</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label for="inputNom">Mécanicien</label>
+                <select class="form-select">
+                  <option selected>Sélectionnez un mécanicien</option>
+                  <option value="1">Fixon LeChar</option>
+                  <option value="2">Imarchepu LeChar</option>
+                  <option value="3">Yvon LeRéparer</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label for="inputPrenom">Date</label>
+                <input class="form-control" type="date" name="date" id="date">
+              </div>
+              <div class="col-md-3">
+                <label for="inputNom">Heure</label>
+                <input class="form-control" type="time" name="time" id="time">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div style="margin-top:25px" class="">
+          <div class="d-flex justify-content-between">
+            <button class="btn btn-danger" id="btnBook" type="button" style="padding: 10px 20px;border-radius: 0.5rem;">
+              Soumettre le formulaire de rendez-vous</button>
+            <div></div><!--Put before button tag to make button float right-->
+          </div>
+        </div>
+      </div>
+      <!--Remplir un formulaire de question-->
+      <div id="divQuestion" style="display:none">
+        <h3 style="display:inline">Poser une question</h3>
+        <label class="switchLink" onclick="rendezvousShow();">Je veux prendre un rendez-vous</label>
+        <div class="formSection">
+          <form>
+            <div class="row">
+              <div class="group col-md-4">
+                <label for="inputPrenom">Prénom</label>
+                <input type="test" class="form-control" id="questionPrenom" placeholder="Prénom">
+              </div>
+              <div class="col-md-4">
+                <label for="inputNom">Nom</label>
+                <input type="text" class="form-control" id="questionNom" placeholder="Nom">
+              </div>
+              <div class="col-md-4">
+                <label for="inputEmail">Contact</label>
+                <input type="text" class="form-control" id="questionContact" placeholder="Courriel ou téléphone">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <label for="inputEmail">Question</label>
+                <textarea rows="6" class="form-control"></textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="formSection">
+          <h5>Information à propos du véhicule (optionel)</h5>
+          <form>
+            <div class="row">
+              <div class="col-md-4">
+                <label for="inputPrenom">Année de fabrication</label>
+                <input type="test" class="form-control" id="annee" placeholder="ex. 2018">
+              </div>
+              <div class="col-md-4">
+                <label for="inputNom">Marque</label>
+                <input type="text" class="form-control" id="marque" placeholder="ex. Toyota">
+              </div>
+              <div class="col-md-4">
+                <label for="inputPhone">Modèle</label>
+                <input type="text" class="form-control" id="modele" placeholder="ex. Camry">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div style="margin-top:25px" class="">
+          <div class="d-flex justify-content-between">
+            <button class="btn btn-danger" id="btnQuestion" type="button" style="padding: 10px 20px;border-radius: 0.5rem;">
+              Soumettre la question</button>
+            <div></div><!--Put before button tag to make button float right-->
+          </div>
+        </div>
       </div>
     </div>
-    <!-- Confirmation modal -->
+    <!-- Rendez-vous confirmation modal -->
     <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-md modal-dialog-centered">
         <div class="modal-content">
@@ -357,6 +421,24 @@
           <div class="modal-body">
             <p>Un courriel de contentant les détails du rendez-vous a été envoyer au
               <label id="emailConfirm">example@email.com.</label>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Retour à l'acceuil</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Question confirmation modal -->
+    <div class="modal fade" id="questionModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-md modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Merci pour votre question!</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Nous allons vous contacter le plus vite que possible.
             </p>
           </div>
           <div class="modal-footer">
