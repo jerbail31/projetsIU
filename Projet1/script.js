@@ -35,7 +35,11 @@ $(document).ready(function(){
     var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
     var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
         return new bootstrap.Popover(popoverTriggerEl)
-    })
+    });
+
+    $('#locationDiv').click(function(){
+        window.open("https://www.google.com/maps/place/SITE,+800+King+Edward+Ave,+Ottawa,+ON+K1N+6N5", '_blank').focus();
+    });
 });
 
 //Fausse validation
